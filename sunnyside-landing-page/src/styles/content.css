@@ -1,0 +1,127 @@
+.content {
+  display: grid;
+  grid-auto-flow: row;
+  width: 100vw;
+}
+.we-are-creatives {
+  position: relative;
+  background-color: #3ebfff;
+  color: white;
+  font-family: "Fraunces", serif;
+  letter-spacing: 0.3em;
+  overflow: hidden;
+  width: 100vw;
+}
+.we-are-creatives img {
+  height: 100%;
+}
+.we-are-creatives h1 {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.six-squares {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-auto-rows: 1fr;
+}
+.text-block {
+  font-family: "Fraunces";
+  padding: 0 4rem;
+  text-align: start;
+  justify-self: center;
+  align-self: center;
+}
+.text-block p {
+  font-size: small;
+  font-family: "Barlou";
+  color: #868686;
+  padding-bottom: 1rem;
+}
+.text-block a {
+  font-size: medium;
+}
+.img-block {
+  position: relative;
+  font-family: "Fraunces";
+}
+.img-block img {
+  height: 100%;
+}
+.img-block h3 {
+  position: relative;
+  bottom: 45%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.img-block p {
+  position: relative;
+  font-size: small;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  bottom: 40%;
+  color: #5a5b5e;
+}
+.reviews-container {
+  background-color: #fffbf8;
+  width: 100vw;
+}
+.reviews-container h4 {
+  padding-top: 4rem;
+  font-family: "Fraunces";
+  letter-spacing: 0.2em;
+  color: #a9a9a9;
+}
+.reviews {
+  display: grid;
+  grid-auto-flow: column;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+.review img {
+  border-radius: 50%;
+  width: 80px;
+  padding: 1rem;
+}
+.review {
+  padding: 1rem;
+}
+.review p {
+  color: #5a5b5e;
+  font-size: small;
+}
+.signature {
+  padding: 2rem;
+}
+.signature span {
+  font-family: "Fraunces";
+  font-size: small;
+}
+.signature p {
+  color: #b7b7b7;
+  margin: 5px;
+}
+.four-squares {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  width: 100vw;
+}
+
+@media screen and (max-width: 700px) {
+  .six-squares {
+    grid-template-columns: none;
+    width: 100vw;
+  }
+  .text-block {
+    text-align: center;
+  }
+
+  .reviews {
+    grid-auto-flow: row;
+    width: 100vw;
+  }
+  .four-squares {
+    grid-template-columns: 50% 50%;
+  }
+}

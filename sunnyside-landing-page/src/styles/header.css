@@ -1,0 +1,83 @@
+header {
+  display: grid;
+  grid-auto-flow: column;
+  background-color: #3ebfff;
+  color: white;
+  width: 100vw;
+}
+.title {
+  justify-self: start;
+  padding-left: 2rem;
+}
+.navbar-header {
+  display: flex;
+  justify-self: end;
+  overflow: hidden;
+}
+.navbar-header a {
+  text-decoration: none;
+  justify-self: center;
+  align-self: center;
+  padding: 1em;
+  border-radius: 2rem;
+}
+.nav-item {
+  color: white;
+}
+.nav-item:hover {
+  background-color: #90daff;
+  cursor: pointer;
+}
+.nav-menu {
+  position: relative;
+  display: none;
+  text-decoration: none;
+  color: white;
+}
+.nav-menu .svg-inline--fa.fa-w-14 {
+  width: 40px;
+  height: 40px;
+}
+
+.menu {
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translate(-50%, 0);
+  z-index: 9999;
+  background-color: white;
+  width: 90vw;
+  display: grid;
+  grid-auto-flow: row;
+}
+.menu-item {
+  text-decoration: none;
+  color: #5a5b5e;
+}
+.mini-arrow {
+  position: absolute;
+  z-index: 9500;
+  border-top: 100px solid transparent;
+  border-bottom: 100px solid transparent;
+  border-right: 100px solid white;
+  right: 0%;
+  top: -10%;
+}
+.navbar-header a.contact {
+  margin: 1rem;
+  padding: 1rem 2rem;
+  background: yellow;
+  color: black;
+}
+.navbar-header a:hover {
+  filter: brightness(50%);
+}
+
+@media screen and (max-width: 700px) {
+  .nav-item {
+    display: none;
+  }
+  .nav-menu {
+    display: block;
+  }
+}

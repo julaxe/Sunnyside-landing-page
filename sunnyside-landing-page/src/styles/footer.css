@@ -1,0 +1,22 @@
+footer {
+  display: grid;
+  grid-template-rows: 33% 33% 33%;
+  color: #2e7565;
+  background-color: #90d4c5;
+  width: 100vw;
+}
+.navbar-footer {
+  padding: 1rem;
+}
+.navbar-footer a {
+  padding: 1.5rem;
+  cursor: pointer;
+}
+.navbar-social-media {
+  padding: 3rem;
+}
+.navbar-social-media svg {
+  padding: 1rem;
+  cursor: pointer;
+  box-sizing: content-box;
+}

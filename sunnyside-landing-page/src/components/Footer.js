@@ -16,9 +16,9 @@ export default function Footer() {
       </div>
       <div className="navbar-footer">
         <nav>
-          <a>About</a>
-          <a>Services</a>
-          <a>Projects</a>
+          <a href="#top">About</a>
+          <a href="#top">Services</a>
+          <a href="#top">Projects</a>
         </nav>
       </div>
       <div className="navbar-social-media">

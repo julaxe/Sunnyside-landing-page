@@ -19,7 +19,7 @@ function ContentBox({ title, children }) {
     <div className="text-block">
       <h1>{title}</h1>
       <p>{children}</p>
-      <a href="">LEARN MORE</a>
+      <a href="#top">LEARN MORE</a>
     </div>
   );
 }

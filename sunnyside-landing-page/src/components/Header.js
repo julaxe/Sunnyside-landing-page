@@ -8,14 +8,14 @@ function Navbar(props) {
 }
 function NavItem(props) {
   return (
-    <a className="nav-item" href="#">
+    <a className="nav-item" href="#top">
       {props.children}
     </a>
   );
 }
 function NavMenuItem(props) {
   return (
-    <a className={"menu-item " + props.extraClass} href="#">
+    <a className={"menu-item " + props.extraClass} href="#top">
       {props.children}
     </a>
   );
@@ -23,7 +23,7 @@ function NavMenuItem(props) {
 function NavIcon(props) {
   return (
     <div className="nav-menu-icon">
-      <a className="nav-menu" onClick={props.onClick}>
+      <a className="nav-menu" onClick={props.onClick} href="#top">
         <FontAwesomeIcon icon={faBars} />
       </a>
       {props.children}
